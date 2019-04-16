@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Påskäggsjakten 2019</title>
+  <title>Hitta rätt lösenord</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -26,37 +26,54 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-        <div class="12 column" style="margin-top: 15%">
-            <h4>Påskäggsjakten 2019</h4>
+        <div class="row">
+          <div class="twelve columns" style="margin-top: 10%">
+            <h4>Hitta rätt lösenord</h4>
             <p>
-                Grattis, du har hittat till påskäggsjakten 2019! För att hitta fram till
-                skatten måste du läsa alla ledtrådar noga. Din första uppgift är att
-                hitta ett lösenord som behövs för att kunna läsa nästa ledtråd. 
+                För att komma vidare behöver du hitta rätt lösenord. Fyll i Lösenordet
+                i rutan här nere och klicka på knappen. När du har hittat rätt lösenord
+                kommer meddelandet att bli tydligt
             </p>
-            <p>
-                Lösenordet får du genom att kasta om bokstäverna som finns gömda i en
-                kortlek. Kortleken ligger i en låda bredvid sängen i gästrummet. 
-            </p>
-            <p>
-                När du är redo klickar du på knappen härunder
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="12 column">
-            <a class="button button-primary" href="vigenere.html">Till nästa uppgift</a>
-        </div>
-    </div>
-</div>
-
+          </div> <!-- column -->
+        </div> <!-- row -->
+    
+        <div class="row">
+            <div class="six columns">
+                <input class="u-full-width" type="text" id="password-input">
+            </div> <!-- column -->
+            <div class="six columns">
+                <input class="button-primary" type="button" value="dekryptera" id="decrypt-button">
+                <input class="button-primary" type="button" value="nollställ" id="clear-button">
+            </div>
+        </div> <!-- row -->
+    
+        <div class="row">
+            <div class="twelve columns" style="margin-top: 0%">
+                <textarea class="u-full-width" style="height:200px" placeholder="…" id="message-textarea"></textarea>
+            </div> <!-- column -->
+        </div> <!-- row -->
+              
+        <div class="row">
+            <div class="six columns">
+               <a class="button button-primary" href="nummer.html">Till nästa uppgift</a>
+            </div> <!-- column -->
+        </div> <!-- row -->
+      </div>
+    
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script src="viginere.js"></script>
+  
 </body>
 </html>
+
